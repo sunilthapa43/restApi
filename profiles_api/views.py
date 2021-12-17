@@ -62,7 +62,7 @@ class HelloApiView(APIView):
 
 class HelloViewSet(viewsets.ViewSet):
     """Test api ViewSet"""
-    def List(self, request ):
+    def list(self, request):
         """return a hello msg"""
         a_viewset = [
         'Users actions (list, create , update , partially update , destroy)',
@@ -71,7 +71,7 @@ class HelloViewSet(viewsets.ViewSet):
         ]
 
         return Response({
-        'message': 'Hello', 'a_viewset': a_viewset
+        'message': f'Hello', 'a_viewset': a_viewset
         })
 
         # add a router for viewset to work
