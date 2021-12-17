@@ -27,3 +27,7 @@ vagrant ssh
 cd /vagrant
 to log into ubuntubionic/vagrant
 source ~/env/bin/activate
+
+
+found the error in the last project i.e devsearch learn that tags had an extra s like tagss
+its because the django automatically defines the classes as plural and if you name the model as tags then when django creates databases it pluralizes it like tagss
