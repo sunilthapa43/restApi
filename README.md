@@ -50,4 +50,19 @@ personal preference
 validating and returning result in same call
 need full control over logic
 processing files and rendering sync response
-call other apis with same request
+call other apis with same request::
+list
+create
+retrieve
+update
+partial_update
+destroy
+
+perfect for standard database
+fastest
+
+preferneces when
+api for crud
+quick and simple apis
+custom logic
+standard database strcture
