@@ -66,3 +66,28 @@ api for crud
 quick and simple apis
 custom logic
 standard database strcture
+
+
+so here is what happens when deploying
+at first cat ~/id_rsa.pub sth like this 
+add this ssh to the azure resources
+
+create a ubuntu vm in azure or aws
+use the sam ssh key (its set as public ssh and you dont need to generate it like before)
+now based on the ssh key you create the vm 
+remember the name of the vm :
+azureuser for this restApi project 
+
+configure the deploy files 
+run the command in the projects root (not in the virtual server vagrant)
+change the debug true to the recent command
+run chmod +x deploy/*.sh  
+which runs the shell command and configurations and access controls or whatsoever
+now to connect to the azure vm run the command :
+ssh azureuser@publicIp 
+and youre done
+
+now run the following command 
+where the link is the raw data view of setup.sh in your github/restApi/deploy/setup.sh 
+
+curl -sL https://raw.githubusercontent.com/sunilthapa43/restApi/master/deploy/setup.sh | sudo bash -

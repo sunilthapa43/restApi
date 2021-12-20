@@ -5,7 +5,7 @@ set -e
 # TODO: Set to URL of git repo.
 PROJECT_GIT_URL='https://github.com/CHANGEME.git'
 
-PROJECT_BASE_PATH='/usr/local/apps/profiles-rest-api'
+PROJECT_BASE_PATH='/usr/local/apps/restApi'
 
 echo "Installing dependencies..."
 apt-get update
